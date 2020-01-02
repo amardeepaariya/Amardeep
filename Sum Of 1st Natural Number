@@ -1,0 +1,32 @@
+/*
+Enter the Number 
+5
+15 is the sum of 5 natural numbers.
+
+*/
+
+import java.util.Scanner;
+     class SumOfNRet
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number ");
+			 int n=sc.nextInt();
+			 
+			 int sn=sumOfNatural(n);
+			  System.out.println(sn+" is the sum of "+n+" natural numbers.");
+			 
+		 }
+		 
+		 static int sumOfNatural(int a)
+		 {
+			 int s=0;
+			 while(a!=0)
+			 {
+				s=s+a;
+                a--;				
+			 }
+				return s; 
+		 }
+	 }
