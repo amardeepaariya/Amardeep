@@ -1,0 +1,22 @@
+/*
+Enter the Age
+15
+
+15 This persion is NOT eligibal for vote
+
+*/
+
+import java.util.Scanner;
+    class Vote
+	{
+		public static void main(String[] args)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the Age");
+			int n=sc.nextInt();
+			if(n>=18)
+				System.out.println(n+" This persion is eligibal for vote");
+			else
+				System.out.println(n+" This persion is NOT eligibal for vote");
+		}
+	}
