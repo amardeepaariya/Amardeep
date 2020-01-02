@@ -1,0 +1,27 @@
+/*
+Enter the Number 
+25
+The sum of Square of Digit 29
+
+*/
+
+import java.util.Scanner;
+     class SumSq
+	 {
+		 public static void main(String[] args)
+		 {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the Number ");
+			int n=sc.nextInt();
+			 
+			 int sum=0;
+			 while(n>=1)
+			 {
+				 int r=n%10;
+				 sum=sum+(r*r);
+				 n=n/10;
+			 }
+				System.out.println("The sum of Square of Digit "+sum); 
+			 
+		 }
+	 }
