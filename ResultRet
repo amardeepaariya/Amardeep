@@ -1,0 +1,37 @@
+import java.util.Scanner;
+     class ResultRet
+	 {
+		 public static void main(String []args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the MARKS of 4 Subject...");
+			 int a=sc.nextInt();
+			 int b=sc.nextInt();
+			 int c=sc.nextInt();
+			 int d=sc.nextInt();
+			 
+			 String s=result(a,b,c,d);
+			 System.out.println("The Result of this Student is "+s);
+		 }
+		 
+		 static String result(int a,int b,int c,int d)
+		 {
+			 int x=(a+b+c+d)/4;
+			 String s="";
+			 
+			 if(a>=35&&b>=35&&c>=35&&d>=35)
+			 {
+				 if(x>=85)
+					s="DISTINCTIO";
+				 else if(x>=60)
+					 s="FIRST DIVISION";
+				 else if(x>=50)
+					 s="SECOND DIVISION";
+				 else if(x>=35)
+					 s="THIRD DIVISION";
+			 }
+			 else
+			 s="FAIL";
+			 return s;
+		 }
+	 }
