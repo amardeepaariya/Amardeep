@@ -1,0 +1,30 @@
+/*
+Enter the Number 
+45624
+Revers no. is 42654
+
+*/
+
+
+import java.util.Scanner;
+     class Revers
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number ");
+			 int n=sc.nextInt();
+			 
+			 int sum=0;
+			 int r=0;
+			 for(;n!=0;)
+			// while(n!=0)
+			 {
+				 
+				 r=n%10;
+				 sum=(sum*10)+r;
+				 n=n/10;
+			 }
+			 System.out.println("Revers no. is "+sum);
+		 }
+	 }
