@@ -1,0 +1,27 @@
+/*
+Enter the Number 
+452
+The product of the Digit is 40
+*/
+
+import java.util.Scanner;
+     class Product
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number ");
+			 int n=sc.nextInt();
+			 
+			int pro=1;
+			 //for(int i=0;i<=n;i++)
+				 while(n>=1)
+			 {
+				 int r=n%10;
+				 pro=pro*r;
+				 n=n/10;
+				 			 
+			 }
+             System.out.println("The product of the Digit is "+pro);
+		 }
+	 }
