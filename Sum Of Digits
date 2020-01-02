@@ -1,0 +1,33 @@
+/*
+Enter the number 
+4564
+The Sum of Digit is 19
+
+*/
+
+import java.util.Scanner;
+     class SumOfDRe
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the number ");
+			 int n=sc.nextInt();
+			 
+			 int s=sumOfDigit(n);
+			 System.out.println("The Sum of Digit is "+s);
+		 }
+		 
+		 static int sumOfDigit(int a)
+		 {
+			 int i,r,s=0;
+			 while(a!=0)
+			 {
+				r=a%10;
+                s=s+r;
+                 a=a/10;
+                				 
+			 }
+			 return s;
+		 }
+	 }
