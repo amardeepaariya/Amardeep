@@ -1,0 +1,25 @@
+import java.util.Scanner;
+     class RevRe
+	{
+		    public static void main(String[] args)
+			{
+				Scanner sc=new Scanner(System.in);
+				System.out.println("Enter the Number that you want to Revers");
+				int n=sc.nextInt();
+				
+				int rev=revers(n);
+				System.out.println("The Revers Number of "+n+" is "+rev);
+			}
+			
+			static int revers(int a)
+			{
+				int s=0,r;
+				while(a!=0)
+				{
+					r=a%10;
+					s=s*10+r;
+					a=a/10;
+				}
+				return s;
+			}
+	}
