@@ -1,0 +1,28 @@
+ import java.util.Scanner;
+ class Power
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the number ...");
+			 int n=sc.nextInt();
+       
+       System.out.println("Enter the number how much times you want ...");
+			 int m=sc.nextInt();
+			  
+			  int sp=powerOfNumber(n,m);
+			  
+				 System.out.println(sp);
+		 }
+		 
+		 static int powerOfNumber(int x,int y)
+		 {
+			 int pw=1;
+			 while(y>0)
+			 {
+				 pw=pw*x;
+				 y--;
+			 }
+			 return pw;
+		 }
+	 }
