@@ -1,0 +1,12 @@
+public class Multiplication
+{
+	public static void main(String []args)
+	{
+		Scanner user=new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		int a=17;
+		int b=23;
+		int mult=a*b;
+		System.out.println("Multiplication of "+" " +a+ " and " +b+ " is " +mult);
+	}
+}
