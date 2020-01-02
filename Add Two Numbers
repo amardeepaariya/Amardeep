@@ -1,0 +1,11 @@
+public class AddTwoNumbers
+{
+	public static void main(String[] args)
+	{
+		int a=20;
+		int b=40;
+		int s;
+		s=a+b;
+		System.out.println("sum of"+a+" and"+b+" is"+s);
+	}
+}
