@@ -1,0 +1,22 @@
+ class Power
+	 {
+		 public static void main(String[] args)
+		 {
+			 
+			  
+			  int sp=powerOfNumber(5,3);
+			  
+				 System.out.println(sp);
+		 }
+		 
+		 static int powerOfNumber(int x,int y)
+		 {
+			 int pw=1;
+			 while(y>0)
+			 {
+				 pw=pw*x;
+				 y--;
+			 }
+			 return pw;
+		 }
+	 }
