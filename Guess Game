@@ -1,0 +1,26 @@
+/*
+Guess Number b/w 0to9
+5
+You LOSE the game 1
+
+*/
+
+import java.util.Scanner;
+import java.util.Random;
+    class Guess
+	{
+		public static void main(String[] args)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Guess Number b/w 0to9");
+			int un=sc.nextInt();
+			
+			Random rd=new Random();
+			int rn=rd.nextInt(10);
+			
+			if(rn==un)
+				System.out.println("You WON the game");
+			else
+				System.out.println("You LOSE the game "+rn);
+		}
+	}
