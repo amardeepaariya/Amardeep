@@ -1,0 +1,41 @@
+/*
+Enter the Number...
+5
+The Fibonacci series are..
+1
+1
+2
+3
+5
+
+*/
+
+import java.util.Scanner;
+     class Fibonacci
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number...");
+			 int n=sc.nextInt();
+			 
+			 printFib(n);
+			 
+		 }
+			
+			 
+			 static void printFib(int n)
+			 {
+				 System.out.println("The Fibonacci series are..");
+				 int f1=0,f2=1,f3;
+				 while(n>0)
+				 {
+					 f3=f1+f2;
+					 f1=f2;
+					 f2=f3;
+					 System.out.println(f1);
+					 n--;
+				 }
+			 }
+		
+	 }
