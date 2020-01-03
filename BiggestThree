@@ -1,0 +1,32 @@
+/*
+Enter the Number....
+45
+12
+85
+The bigest Number 45 12 85 is 85
+
+*/
+
+import java.util.Scanner;
+     class BiggestThree
+	 {
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number....");
+			 int x=sc.nextInt();
+			 int y=sc.nextInt();
+			 int z=sc.nextInt();
+			 
+			 int big=bigestThreeNumber(x,y,z);
+			 System.out.println("The bigest Number "+ x+" " + y+" " + z +" is "+big);
+		 }
+		 
+		 static int bigestThreeNumber(int a,int b,int c)
+		 {
+			 int big;
+			 big=(a>b&&a>c?a:b>c?b:c);
+			 return big;
+		 }
+		 
+	 }
