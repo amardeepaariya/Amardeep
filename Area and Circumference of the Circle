@@ -1,0 +1,15 @@
+import java.util.Scanner;
+   class Circle
+   {
+	   public static void main(String[] args)
+	   {
+		   Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter the radious of the Circle");
+		   double r=sc.nextDouble();
+		   double area=(22*r*r)/7;
+		   System.out.println("Area of the Circle = "+area);
+		   double cir=(22*2*r)/7;
+		   System.out.println("Circumference of the Circle = "+cir);
+	   }
+	   
+   }
