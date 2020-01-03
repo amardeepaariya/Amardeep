@@ -1,0 +1,47 @@
+import java.util.Scanner;
+    class CheckMonth
+	{
+		public static void main(String[] args)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the Number B/W 1 TO 12");
+			int a=sc.nextInt();
+			
+			if(a==1){
+				System.out.println("This is JANUARY");
+			}
+			else if(a==2){
+			System.out.println("This is FEBUARY");
+			}
+			else if(a==3){
+			System.out.println("This is MARCH");
+			}
+			else if(a==4){
+			System.out.println("This is APRIL");
+			}
+			else if(a==5){
+			System.out.println("This is MAY");
+			}
+			else if(a==6){
+			System.out.println("This is JUNE");
+			}
+			else if(a==7){
+			System.out.println("This is JULY");
+			}
+			else if(a==8){
+			System.out.println("This is AUGUST");
+			}
+			else if(a==9){
+			System.out.println("This is SEPTEMBER");
+			}
+			else if(a==10){
+			System.out.println("This is OCTUBER");
+			}
+			else if(a==11){
+			System.out.println("This is NOVEMBER");
+			}
+			else if(a==12){
+			System.out.println("This is DECEMBER");
+			}
+		}
+	}
