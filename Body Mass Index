@@ -1,0 +1,15 @@
+import java.util.Scanner;
+   class BMI
+   {
+	   public static void main(String[] args)
+	   {
+		   Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter the Weght in kg");
+		   double w=sc.nextDouble();
+		   System.out.println("Enter the Hight in meter");
+		   double h=sc.nextDouble();
+		   double b=w/(h*h);
+		   System.out.println("Body Mass Index ="+b);
+		   
+	   }
+   }
