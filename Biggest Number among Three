@@ -1,0 +1,23 @@
+import java.util.Scanner;
+   class BiggestNo3
+   {
+	   public static void main(String[] args)
+	   {
+		   Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter any Three Integers");
+		   int a,b,c;
+		    a=sc.nextInt();
+		    b=sc.nextInt();
+		    c=sc.nextInt();
+		   int big;
+		   if(a>b && a>c)
+		   
+			   big=a;
+			   
+			  else if(b>c)
+				  big=b;
+			  else
+				  big=c;
+				   System.out.println("Biggest No. = "+big);
+	   }
+   }
