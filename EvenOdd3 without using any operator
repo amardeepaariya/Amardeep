@@ -1,0 +1,13 @@
+import java.util.Scanner;
+ class EvenOdd3           //without using any operator
+ {
+	 public static void main(String[] args)
+	 {
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("Enter the No.");
+		 int n=sc.nextInt();
+		 String st[]={"Even","odd"};
+		 System.out.println(n+" is "+st[n%2]+"Number");
+		 
+	 }
+ }
