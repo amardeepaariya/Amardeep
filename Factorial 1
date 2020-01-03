@@ -1,0 +1,31 @@
+import java.util.Scanner;
+     class Factorial
+	 {
+
+		 
+		 public static void main(String[] args)
+		 {
+			 Scanner sc=new Scanner(System.in);
+			 System.out.println("Enter the Number");
+			 int n= sc.nextInt();
+			 
+			 int f=fact(n);
+			 
+				 System.out.println(f+" is the Factorial of "+n );
+			 
+		 }
+		 
+		 static int fact(int x)
+		 {
+			 int fc=1;
+			 while(x>1)
+			 {
+		     fc=fc*x;
+			 x--;
+			 }
+			  return fc; 
+              
+		 }
+
+		 
+	 }
