@@ -1,0 +1,25 @@
+/*
+Enter the 1st No.
+45
+Enter the 2nd No.
+20
+45 The No. is Biggest No.
+
+*/
+
+import java.util.Scanner;
+  class BiggestNo
+  {
+	  public static void main(String []args)  //By using Ternery operator
+    {
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("Enter the 1st No.");
+	  int a=sc.nextInt();
+	  System.out.println("Enter the 2nd No.");
+	  int b=sc.nextInt();
+	  int st=(a>=b)?a:b;
+	  System.out.println(st+" The No. is Biggest No.");
+	  
+    }
+	  
+  }
