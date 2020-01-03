@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class area2
+{
+	public static void main(String[] args)
+	{
+		Scanner user=new Scanner(System.in);
+        System.out.println("Enter side of a square");
+        int s=user.nextInt();
+        int area=s*s;
+        System.out.println("Area of a square is "+area);	
+	}
+}
